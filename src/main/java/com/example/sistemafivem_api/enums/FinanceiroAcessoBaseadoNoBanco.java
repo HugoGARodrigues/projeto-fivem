@@ -5,10 +5,10 @@ import java.util.Optional;
 
 public enum FinanceiroAcessoBaseadoNoBanco {
 
-    POS_0(0,"ROLE_CONSULTAR_FINANCEIRO"),
-    POS_1(1,"ROLE_INCLUIR_FINANCEIRO"),
-    POS_2(2,"ROLE_ALTERAR_FINANCEIRO"),
-    POS_3(3,"ROLE_EXCLUIR_FINANCEIRO");
+    CONSULTARFIN(0,"ROLE_CONSULTAR_FINANCEIRO"),
+    INCLUIRFIN(1,"ROLE_INCLUIR_FINANCEIRO"),
+    ALTERARFIN(2,"ROLE_ALTERAR_FINANCEIRO"),
+    DELETARFIN(3,"ROLE_EXCLUIR_FINANCEIRO");
 
     private final int posicao;
     private final String roleName;

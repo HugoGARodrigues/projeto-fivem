@@ -5,10 +5,10 @@ import java.util.Optional;
 
 public enum VendasAcessoBaseadoNoBanco {
 
-    POS_0(0,"ROLE_CONSULTAR_VENDA"),
-    POS_1(1,"ROLE_INCLUIR_VENDA"),
-    POS_2(2,"ROLE_ALTERAR_VENDA"),
-    POS_3(3,"ROLE_EXCLUIR_VENDA");
+    CONSULTARVEN(0,"ROLE_CONSULTAR_VENDA"),
+    INCLUIRVEN(1,"ROLE_INCLUIR_VENDA"),
+    ALTERARVEN(2,"ROLE_ALTERAR_VENDA"),
+    EXCLUIRVEN(3,"ROLE_EXCLUIR_VENDA");
 
     private final int posicao;
     private final String roleName;

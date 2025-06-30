@@ -9,12 +9,16 @@ import org.springframework.stereotype.Service;
 import com.example.sistemafivem_api.entity.Access;
 import com.example.sistemafivem_api.entity.User;
 import com.example.sistemafivem_api.repository.AccessRepository;
+import com.example.sistemafivem_api.repository.UserRepository;
 
 @Service
 public class AcessService implements UserDetailsService {
 
     @Autowired
     private AccessRepository accessRepository;
+
+    @Autowired
+    private UserRepository userRepository;
 
     @Autowired
     private Access access;
@@ -24,7 +28,7 @@ public class AcessService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        access = accessRepository.findByEmail(email)
+        user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException("Usuário não encontrado: " + email));
        
         return access;

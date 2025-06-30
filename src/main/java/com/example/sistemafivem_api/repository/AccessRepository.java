@@ -8,6 +8,5 @@ import com.example.sistemafivem_api.entity.Access;
 
 public interface AccessRepository extends JpaRepository<Access, Long> {
 
-    Optional<Access> findByUserId(Integer userId);
     Optional<Access> findByEmail(String email);
 }
